@@ -35,17 +35,32 @@ export default function HomeScreen({ navigation }: any) {
       </View>
         <Text style={styles.recent}>Your recent locations</Text>
       <View style={styles.serverContainer}>
-          <Image source={require('../../assets/belgium.png')} style={styles.icon} />
+        <View style={{flexDirection:"row",gap:10}}>
+          <Image source={require('../../assets/Canada.png')} style={styles.icon} />
         <Text style={styles.status}>
-          Belgium
+        Canada
         </Text>
-      </View>
+        </View>
+          <Image source={require('../../assets/4_bars.png')} style={styles.icon} />
+      </View> 
       <View style={styles.serverContainer}>
+        <View style={{flexDirection:"row",gap:10}}>
           <Image source={require('../../assets/belgium.png')} style={styles.icon} />
         <Text style={styles.status}>
-          Belgium
+        Belgium
         </Text>
-      </View>
+        </View>
+          <Image source={require('../../assets/5_bars.png')} style={styles.icon} />
+      </View> 
+      <View style={styles.serverContainer}>
+        <View style={{flexDirection:"row",gap:10}}>
+          <Image source={require('../../assets/Greece.png')} style={styles.icon} />
+        <Text style={styles.status}>
+        Greece
+        </Text>
+        </View>
+          <Image source={require('../../assets/5_bars.png')} style={styles.icon} />
+      </View> 
     </SafeAreaView>
   );
 }
@@ -60,9 +75,10 @@ const styles = StyleSheet.create({
   status: { color: 'white', fontSize: 16,textAlign: 'center' },
   location: { color: '#B0B0B0', fontSize: 14, marginTop: 5 },
   speedContainer: { flexDirection: 'row', marginTop: 20 },
-  serverContainer: { flexDirection: 'row',marginVertical:10, alignItems: 'center', backgroundColor: '#1A2B48', padding: 10, borderRadius: 8, marginHorizontal: 10 ,gap:10},
   speed: { backgroundColor: '#1A2B48', padding: 10, borderRadius: 8, marginHorizontal: 5 },
   speedText: { color: 'white' },
   recent: { color: 'white', fontSize: 16,margin: 20 },
+  serverContainer: { flexDirection: 'row',justifyContent:"space-between",marginVertical:10, alignItems: 'center', backgroundColor: '#1A2B48', padding: 10, borderRadius: 8, marginHorizontal: 10 ,gap:10},
+
 
 });
